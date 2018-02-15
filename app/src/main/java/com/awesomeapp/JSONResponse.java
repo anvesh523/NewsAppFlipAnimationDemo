@@ -1,19 +1,19 @@
 package com.awesomeapp;
 
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class JSONResponse {
 
-    private List<NewsData> articles;
+    private ArrayList<NewsData> articles;
     private String status;
     private String totalResults;
 
-    public List<NewsData> getArticles() {
+    public ArrayList<NewsData> getArticles() {
         return articles;
     }
 
-    public void setArticles(List<NewsData> articles) {
+    public void setArticles(ArrayList<NewsData> articles) {
         this.articles = articles;
     }
 

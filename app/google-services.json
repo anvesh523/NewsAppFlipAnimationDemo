@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "501080690423",
+    "project_id": "awesome-app-react"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501080690423:android:72c2c99cb8893e11",
+        "android_client_info": {
+          "package_name": "com.awesomeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501080690423-eei87e6doffntj9trc4i1f74vsu9dppk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.awesomeapp",
+            "certificate_hash": "4ec926bc14a36fb3bc7ed0be81aed820100a3cd1"
+          }
+        },
+        {
+          "client_id": "501080690423-ct5qgvi2ldqjd513urfmdva158uallhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6Gd3SdYR2m2Y9rMXlQEWH2PfJoIUZCgw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

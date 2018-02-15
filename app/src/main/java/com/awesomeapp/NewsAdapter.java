@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 
 import com.ReactNative.utils.AphidLog;
 import com.ReactNative.utils.UI;
+import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -115,6 +117,15 @@ public class NewsAdapter extends BaseAdapter {
                 });
 
         return layout;
+    }
+
+
+    public void setStringFromRN(ArrayList<NewsData> data) {
+
+        Log.d("TAG", "Refresh data ");
+        newsList.addAll(data);
+
+        notifyDataSetChanged();
     }
 
     public void removeData(int index) {
