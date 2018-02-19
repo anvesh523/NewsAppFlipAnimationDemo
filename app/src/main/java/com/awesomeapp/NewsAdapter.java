@@ -16,30 +16,23 @@ import android.widget.TextView;
 
 import com.ReactNative.utils.AphidLog;
 import com.ReactNative.utils.UI;
-import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 public class NewsAdapter extends BaseAdapter {
 
-    Context context;
+    private Context context;
     private LayoutInflater inflater;
     private int repeatCount = 1;
 
     private ArrayList<NewsData> newsList;
-
-    public NewsAdapter(Context context) {
-        this.context = context;
-        inflater = LayoutInflater.from(context);
-    }
 
     public NewsAdapter(Context context, ArrayList<NewsData> newsList) {
         this.context = context;
         this.newsList = newsList;
         inflater = LayoutInflater.from(context);
         AphidLog.d("TAG size: %d", newsList.size());
-
     }
 
     @Override
@@ -120,7 +113,7 @@ public class NewsAdapter extends BaseAdapter {
     }
 
 
-    public void setStringFromRN(ArrayList<NewsData> data) {
+    public void setNewsData(ArrayList<NewsData> data) {
 
         Log.d("TAG", "Refresh data ");
         newsList.addAll(data);
