@@ -1,19 +1,17 @@
 package com.awesomeapp;
 
 
-import java.util.ArrayList;
-
 public class JSONResponse {
 
-    private ArrayList<NewsData> articles;
+    private NewsData[] articles;
     private String status;
     private String totalResults;
 
-    public ArrayList<NewsData> getArticles() {
+    public NewsData[] getArticles() {
         return articles;
     }
 
-    public void setArticles(ArrayList<NewsData> articles) {
+    public void setArticles(NewsData[] articles) {
         this.articles = articles;
     }
 
@@ -36,9 +34,9 @@ public class JSONResponse {
     @Override
     public String toString() {
         return "JSONResponse { " +
-                "Articles= " + articles +
                 ", status = " + status +
                 ", totalResults = " + totalResults +
+                "Articles= " + articles +
                 " }";
     }
 }
