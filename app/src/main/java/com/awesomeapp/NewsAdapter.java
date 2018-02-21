@@ -15,7 +15,8 @@ import android.widget.TextView;
 
 import com.ReactNative.utils.AphidLog;
 import com.ReactNative.utils.UI;
-import com.squareup.picasso.Picasso;
+// import com.squareup.picasso.Picasso;
+import com.koushikdutta.ion.Ion;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -91,7 +92,11 @@ public class NewsAdapter extends BaseAdapter {
                 .<ImageView>findViewById(layout, R.id.photo);
 
         ImageView imageView = layout.findViewById(R.id.photo);
-        Picasso.with(context).load(data.getUrlToImage()).into(imageView);
+        Ion.with(context)
+                .load(data.getUrlToImage())
+                .withBitmap()
+                .intoImageView(imageView);
+        // Picasso.with(context).load(data.getUrlToImage()).into(imageView);
 
 
         UI
